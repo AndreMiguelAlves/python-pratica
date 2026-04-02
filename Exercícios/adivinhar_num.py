@@ -9,25 +9,25 @@ print("---Jogo de adivinhação---")
 while tentativas > 0:
     guess = int(input("Adivinha o número de 1 a 10: "))
     
-    # FILTRO 1: O número está no intervalo correto?
+    
     if guess < 1 or guess > 10:
         print("Erro! Escolhe um número entre 1 e 10.")
         continue
 
-    # 1. VERIFICAR SE É REPETIDO
+    
     if guess in lista_num:
         print(f"Atenção! Já tentaste o {guess}. Não gastes tentativas!")
-        continue # O 'continue' faz o robô saltar para o início do while sem ler o resto!
+        continue 
 
-    # 2. SE NÃO FOR REPETIDO, GUARDAMOS NA LISTA
+    
     lista_num.append(guess)
 
-    # 3. VERIFICAR SE ACERTOU
+   
     if guess == secreto:
         print("Parabéns. Acertaste!")
         break
 
-    # 4. TIRAR VIDA E DAR PISTAS
+    
     tentativas -= 1
     
     if tentativas == 0:
