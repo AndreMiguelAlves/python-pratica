@@ -1,2 +1,2 @@
-# python-pr-tica
+# python- Exercícios Práticos
 Exercícios de Python por conta própria
